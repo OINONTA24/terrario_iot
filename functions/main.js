@@ -30,10 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Temp. mínima:</strong> ${plantaInfo.minimum_temperature?.deg_c ?? "N/A"} °C</p>
       `;
 
-      // Si necesitas enviar estos valores por MQTT o WebSocket, lo haces aquí
-      // Ejemplo:
-      // mqttClient.publish("config/temp_min", plantaInfo.minimum_temperature.deg_c.toString());
-
     } catch (error) {
       console.error("Error al consultar la API:", error);
       infoDiv.textContent = "Error al obtener información de la planta.";
